@@ -15,6 +15,7 @@ class hr_employee(models.Model):
     _inherit = 'hr.employee'
 
     emp_seq = fields.Char("Employee Sequence", required=True, readonly=True, copy=False, default='/')
+    nick_name = fields.Char(string="Nick Name")
     
     @api.model
     def create(self, vals):
