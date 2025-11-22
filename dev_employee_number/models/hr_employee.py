@@ -16,7 +16,9 @@ class hr_employee(models.Model):
 
     emp_seq = fields.Char("Employee Sequence", required=True, readonly=True, copy=False, default='/')
     nick_name = fields.Char(string="Nick Name")
-    
+    rfid_number = fields.Char(string="RFID Number")
+
+
     @api.model
     def create(self, vals):
         if vals.get('emp_seq',  '/') == '/':

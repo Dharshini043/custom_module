@@ -20,8 +20,14 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
             <xpath expr="//field[@name='work_email']" position="before">
                 <field name="nick_name"/>
             </xpath>
+
+            <xpath expr="//field[@name='nick_name']" position="after">
+                <field name="rfid_number"/>
+            </xpath>
+
         </field>
     </record>
+
     <record id="view_employee_tree_inherit_nickname" model="ir.ui.view">
         <field name="name">hr.employee.list.inherit.nickname</field>
         <field name="model">hr.employee</field>
@@ -35,5 +41,6 @@ For Module Support : devintelle@gmail.com  or Skype : devintelle
 
         </field>
     </record>
+
 </odoo>
 
